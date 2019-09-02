@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "669208345111",
+    "firebase_url": "https://fir-cloudmessage-c8bba.firebaseio.com",
+    "project_id": "fir-cloudmessage-c8bba",
+    "storage_bucket": "fir-cloudmessage-c8bba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669208345111:android:86fbdf5a28a660f9",
+        "android_client_info": {
+          "package_name": "com.dev.firebasecloudmessage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669208345111-do423789bbug76tiggueu4esuul77lvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1lOt1lXQgu-FDB2IRLiIqZAkCeld8XE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669208345111-do423789bbug76tiggueu4esuul77lvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
