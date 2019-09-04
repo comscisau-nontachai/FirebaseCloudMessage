@@ -25,14 +25,14 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         super.onMessageReceived(remoteMessage)
 
         val notification = remoteMessage?.notification as RemoteMessage.Notification
-        val data = remoteMessage?.data as Map<String,String>
+        val data = remoteMessage.data as Map<String,String>
 
         sendNotification(notification,data)
     }
 
     private fun sendNotification(notification: RemoteMessage.Notification,data :Map<String,String>){
 
-        val icon = BitmapFactory.decodeResource(resources,R.mipmap.sym_def_app_icon)
+        val icon = BitmapFactory.decodeResource(resources,R.drawable.ic_lock_idle_alarm)
 
         val intent = Intent(this,MainActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
@@ -49,7 +49,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
             .setColor(Color.RED)
             .setLights(Color.RED, 1000, 300)
             .setDefaults(Notification.DEFAULT_VIBRATE)
-            .setSmallIcon(R.mipmap.sym_def_app_icon)
+            .setSmallIcon(R.drawable.ic_lock_idle_alarm)
 
 
         try {
@@ -63,7 +63,6 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         } catch (e: Exception) {
             e.stackTrace
         }
-
         val notificationManager  = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
