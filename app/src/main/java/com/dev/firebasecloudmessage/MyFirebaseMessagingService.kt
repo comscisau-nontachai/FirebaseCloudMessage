@@ -28,6 +28,10 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         val data = remoteMessage.data as Map<String,String>
 
         sendNotification(notification,data)
+        
+        for(i in 0..100){
+            print("for [$i]")
+        }
     }
 
     private fun sendNotification(notification: RemoteMessage.Notification,data :Map<String,String>){
